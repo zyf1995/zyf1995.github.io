@@ -1,0 +1,32 @@
+name: Deploy Hugo #自动化的名称
+
+on:
+  push: # push的时候触发工作流
+    branches: #触发的分支 
+      - master
+
+jobs: #开始工作流
+  build-deploy:
+    runs-on: ubuntu-latest #使用Ubuntu镜像
+    steps:
+      - name: Checkout #步骤名称
+        uses: actions/checkout@master #使用的软件名称和对应版本
+        with: #软件内指定的参数
+          submodules: true
+
+      - name: Setup Hugo #安装Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./public
+          commit_message: ${{ github.event.head_commit.message }}
