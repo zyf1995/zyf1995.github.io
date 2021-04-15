@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://zyf1995.github.io/"
 languageCode = "en-us"
 title = "飞大哒的博客"
 theme = "ananke"   
@@ -22,13 +22,13 @@ summaryLength = 50
 # 顶部栏
 [[menu.navbar]]
   name = "首页"
-  url = "http://localhost:1313"
+  url = "https://zyf1995.github.io/"
 
 # 侧边栏，可以写多个
 [[menu.sidebar]]
   name = "新浪"
-  url = "https://www.sina.com"
+  url = "https://www.sina.com/"
 
 [[menu.sidebar]]
   name = "Github"
-  url = "https://github.com"
+  url = "https://github.com/zyf1995/"
