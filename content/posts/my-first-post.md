@@ -1,15 +1,18 @@
 ---
-title: "使用Github Action + Hugo 实现自动化部署博客"
-author: "飞大哒"
-date: 2021-04-15T16:51:24+08:00
+title: 使用Github Action + Hugo 实现自动化部署博客
+description: Post with featured image.
+toc: true
+authors: 
+  - feifei-author
+tags:
+  - 前端
+categories:
+  - 分享
+series:
+  - 博客搭建
+date: '2021-04-16'
+lastmod: '2021-04-16'
 draft: false
-
-tags: [
-"分享"
-]
-categories: [
-"前端"
-]
 ---
 
 ## 前言
