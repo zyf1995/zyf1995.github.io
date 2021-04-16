@@ -1,6 +1,6 @@
 main:
   - name: 关于我
-    url: /authors/
+    url: /authors/feifei-author/
     weight: 1
   - name: 文章
     url: /posts/
