@@ -12,7 +12,7 @@ social:
     url: https://github.com/zyf1995/
 ---
 
-## Self Introduction
+## 自我介绍
 
 很高心认识您！！
 
